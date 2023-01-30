@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+
+    <link rel="stylesheet" href="static/style.css">
+
+
+   
+
+</head>
+
+<body>
+    
+    <div class="topnav">
+        <h1>Men for Hire</h1>
+        <div> 
+            <a class="{%block activeHome%}{%endblock%}" href="/home">Home</a>
+            <a class="{%block activeProfile%}{%endblock%}" href="/profile">Profile</a>
+            <a class="{%block activeContact%}{%endblock%}" href="/contact">Contact</a>
+            <a class="{%block activeAbout%}{%endblock%}" href="/about">About us</a>
+            <a class="{%block activeResume%}{%endblock%}" href="/Myresume">My resume</a>
+        </div>
+    </div>
+
+<img src="" alt="" style="border-radius: 360px">
+    {% block body %}{% endblock %}
+</body>
+
+<footer>
+    <div>
+        <h2>Hey@Men4hire.com</h2>
+        <h5>If you need a job send us an email</h5>
+    </div>
+    <div>
+        <h3>Dribble</h3>
+        <h3>linkln</h3>
+        <h3>Afrisplash</h3>
+    </div>
+</footer>
+
+</html>
+
+
