@@ -1,0 +1,98 @@
+.back{
+position: absolute;
+width: 100%;
+height: 933px;
+left: 0px;
+top: 123px;
+
+}
+.back .image{
+    position: relative;
+    width: 660px;
+    height: 828px;
+    left: 15px;
+    top: 50px;
+    /* filter: drop-shadow(-8px 4px 50px #1c1b1b); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('/static/contact\ page\ background.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 105px 0px 0px 105px;
+
+}
+.back .image h2{
+    position: relative;
+    color: aliceblue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    font-family:   sans-serif;
+    left: 117px;
+    top: 20px;
+    width: 50%;
+
+}
+.back .image h3{
+position: relative;
+left: 117px;
+bottom: 10px;
+font-family: 'Courier New', Courier, monospace;
+width: 70%;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: antiquewhite;
+}
+
+.back .image .add{
+position: relative;
+background-color: rgba(165, 42, 42, 0.199);
+border-radius: 50px;
+width: 259px;
+height: 75px;
+left: 100px;
+top: 381px;
+}
+
+.back .image .add h2{
+   
+    font-size: 14px;
+    color:aliceblue
+}
+.back .image .add h3{
+    left: 77px;
+    font-size: 11px;
+    color: antiquewhite;
+    padding: 20px;
+}
+
+.back .image .email{
+position: relative;
+background-color:rgba(137, 43, 226, 0.219);
+border-radius: 19px;
+width: 218px;
+height: 66px;
+left: 83px;
+bottom: 24px;
+}
+
+.back .image .num{
+position: relative;
+width: 173px;
+height: 69px;
+left: -10px;
+bottom: 30px;
+background-color: rgba(0, 0, 255, 0.105);
+border-radius: 10px;
+
+}
+
+
+.back .image .num h2{
+    position: relative;
+    left: 0px;
+}
+.back .image .num h3{
+    position: relative;
+    left: -18px;
+}
