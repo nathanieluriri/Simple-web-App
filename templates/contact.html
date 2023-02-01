@@ -9,34 +9,71 @@
         <h2>Have a place in
             mind? </h2>
 
-            <h3>
-                Reach out to us and we can make that place your new
-                workplace we might already know your new boss come 
-                and try us and see say no to hunger.
-            </h3>
+        <h3>
+            Reach out to us and we can make that place your new
+            workplace we might already know your new boss come
+            and try us and see say no to hunger.
+        </h3>
         <div class="add">
             <h2>Address</h2>
             <h3>Abuja Veritas university</h3>
-        <div class="email">
-            <h2>Email</h2>
-            <h3>Men4Hire@gmail.com</h3>
-        </div>
-        <div class="num">
-            <h2>Phone number</h2>
-            <h3>+234-805-396-4826</h3>
-        </div>
+            <div class="email">
+                <h2>Email</h2>
+                <h3>Men4Hire@gmail.com</h3>
+            </div>
+            <div class="num">
+                <h2>Phone number</h2>
+                <h3>+234-805-396-4826</h3>
+            </div>
         </div>
     </div>
-<h2 id="CONTACT">Contact Us</h2>
-<h3 id="name">Name</h3>
-<h3 id="name-hint">Enter your Full Name<hr></h3>
-<h3 id="Email">Email</h3>
-<h3 id="Email-hint">Enter your  Email Address<hr></h3>
-<h3 id="Details">Details</h3>
-<h3 id="Details-hint">Enter  more details  <hr></h3>
-<h3 id="company">Company</h3>
-<h3 id="company-hint">Enter Company name  <hr></h3>
-<h3 id="submit-btn">Submit info</h3>
+    <h2 id="CONTACT">Contact Us</h2>
+    <h3 id="name">Name</h3>
+    <h3 id="name-hint">
+        <p data-clicked="" contenteditable="True"> Enter your Full Name</p>
+        <hr>
+    </h3>
+    <h3 id="Email">Email</h3>
+    <h3 id="Email-hint">
+        <p data-clicked="" contenteditable="True"> Enter your Email Address</p>
+        <hr>
+    </h3>
+    <h3 id="Details">
+        <p contenteditable="True" data-clicked=""> Details </p>
+    </h3>
+    <h3 id="Details-hint">
+        <p contenteditable="True" data-clicked=""> Enter more details </p>
+        <hr>
+    </h3>
+    <h3 id="company">
+        <p contenteditable="True" data-clicked=""> Company </p>
+    </h3>
+    <h3 id="company-hint">
+        <p contenteditable="True" data-clicked=""> Enter Company name </p>
+        <hr>
+    </h3>
+    <h3 id="submit-btn">Submit info</h3>
 </div>
+<script>
 
+    document.querySelectorAll("p").forEach((item) => {
+        
+        let placeHolder;
+        item.onfocus = (e) => {
+            if (e.target.getAttribute("data-clicked") != "True") {
+                placeHolder=e.target.innerText;
+                e.target.innerText = ""
+                e.target.setAttribute("data-clicked", "True")
+            }
+            else {
+                return
+            }
+        }
+        item.addEventListener("focusout",(e)=>{
+            if (e.target.innerText==""){
+                e.target.innerText=placeHolder
+            }
+        })
+    })
+</script>
 {% endblock %}
